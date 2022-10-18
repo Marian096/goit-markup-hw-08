@@ -21,9 +21,6 @@
   margin-bottom: 20px;
   text-align: center;
 
-  @include tablet {
-  }
-
   @include desktop {
     display: inline-block;
     font-size: 26px;
@@ -46,6 +43,11 @@
 }
 
 .address_wrap {
+
+    @include mobile {
+    margin-bottom: 60px;
+    }
+
   @include tablet {
     margin-right: 165px;
     margin-bottom: 60px;
@@ -57,11 +59,20 @@
 }
 
 .footer__items {
-  @include mobile {
+    @media screen and (max-width: 1199px) {
     text-align: center;
-  }
+    }
+}
 
-  margin-bottom: 9px;
+.footer__items:not(:last-child){
+
+@media screen and (max-width: 1199px) {
+        margin-bottom: 8px;
+    }
+
+@include desktop {
+    margin-bottom: 9px;
+}
 }
 
 .footer {
@@ -101,12 +112,16 @@
   display: block;
   text-align: center;
 
-  @include mobile {
-    margin-top: 60px;
-  }
   @include desktop {
     display: inline-block;
   }
+}
+
+.footer-social__wrap {
+
+    @include mobile {
+    margin-bottom: 60px;
+    }
 }
 
 .footer-social-list {

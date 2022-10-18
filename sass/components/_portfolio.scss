@@ -22,9 +22,20 @@
 }
 
 .filter__list {
-    margin-bottom: 50px;
     display: flex;
+        flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+
+@include tablet {
+margin-bottom: 30px;
+}
+   @include desktop{
+margin-bottom: 50px;
     justify-content: center;
+} 
 }
 
 .filter__item:not(:first-child) {
@@ -32,8 +43,13 @@
 }
 
 .portfolio {
+        padding-top: 60px;
+            padding-bottom: 60px;
+
+    @include desktop {
     padding-top: 94px;
-    padding-bottom: 94px;
+        padding-bottom: 94px;
+    }
 
 &__link {
     text-decoration: none;

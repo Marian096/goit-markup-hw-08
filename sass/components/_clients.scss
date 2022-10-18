@@ -45,15 +45,35 @@
 
   &__item {
     list-style: none;
+
+    @include mobile {
+    width: calc((100% - 30px)/2);
+    }
+
+    @include tablet {
+    width: calc((100% - 60px)/3);
+    }
   }
 
   &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
-    padding: 16px 32px;
+    padding: 16px 52px;
+
+    @include tablet {
+    width: 226px;
+        height: 92px;
+        padding: 16px 60px;
+    }
+
+    @include desktop {
+    width: 170px;
+        height: 92px;
+        padding: 16px 32px;
+    }
   }
 
   &__link {

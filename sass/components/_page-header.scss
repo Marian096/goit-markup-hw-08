@@ -215,9 +215,14 @@ fill: var(--accent-color);
   }
 }
 
+
 .contact-list-item:not(:last-child) {
   @include tablet {
     margin-bottom: 10px;
+  }
+
+  @include desktop {
+      margin-right: 50px;
   }
 }
 
@@ -323,8 +328,3 @@ height: 16px;
 }
 }
 
-.contact-tel {
-  @include desktop {
-    margin-left: 50px;
-  }
-}
