@@ -940,7 +940,7 @@ img {
 .clients__item {
   list-style: none;
 }
-@media screen and (min-width: 1px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .clients__item {
     width: calc((100% - 30px) / 2);
   }
@@ -1038,6 +1038,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1060,7 +1061,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address_wrap {
     margin-right: 165px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1757,5 +1757,5 @@ img {
 
 .form-btn:hover,
 .form-btn:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }/*# sourceMappingURL=main.css.map */
