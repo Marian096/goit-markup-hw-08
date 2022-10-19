@@ -1671,8 +1671,7 @@ img {
 
 .text-agree {
   font-size: 12px;
-  line-height: 14px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
