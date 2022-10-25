@@ -31,15 +31,12 @@
 
 @include tablet {
 margin-bottom: 30px;
+justify-content: center;
 }
    @include desktop{
 margin-bottom: 50px;
     justify-content: center;
 } 
-}
-
-.filter__item:not(:first-child) {
-    margin-left: 8px;
 }
 
 .portfolio {
@@ -68,7 +65,11 @@ margin-bottom: 50px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+
+    @include tablet {
+            font-size: 17px;
+        }
 }
 
 &__text {
@@ -105,8 +106,11 @@ margin-bottom: 50px;
     letter-spacing: 0.03em;
     color: var(--primary-bg-color);
     background: rgba(33, 150, 243, 0.9);
-    padding: 63px 24px;
-    transform: translateY(100%);
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
